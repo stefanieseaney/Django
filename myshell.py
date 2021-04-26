@@ -24,3 +24,8 @@ for t in topics:
 for e in entries:
     print(f"Topic: {e.topic}")
     print(f"Entry: {e.text}")
+
+from django.contrib.auth.models import User
+
+for user in User.objects.all():
+    print(user.username, user.id)
