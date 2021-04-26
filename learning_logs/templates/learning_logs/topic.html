@@ -13,6 +13,9 @@
         <p>{{ entry.text|linebreaks }}</p>
 
     </li>
+    <p>
+        <a href="{% url 'learning_logs:edit_entry' entry.id %}">Edit entry</a>
+    </p>
     {% empty %}
     <li>There are no entries for this topic yet.</li>
     {% endfor %}
